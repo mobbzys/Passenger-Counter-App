@@ -1,12 +1,17 @@
 /*=== Global CSS ====*/
 *, html, body { box-sizing: border-box; padding: 0; margin: 0; }
 img { max-width: 100%; }
-body { height: 100vh; display: grid; place-items: center; background-image: url('Assets/train.jpg'); background-position: center; background-size: 1920px; }
+body { position: relative; height: 100vh; display: grid; place-items: center; background-image: url('Assets/train.jpg'); background-position: center; background-size: 1920px; }
 
 /*=== Passenger App ===*/
-.site_wrapper { position: relative; z-index: 9999; display: flex; flex-direction: column; }
-.overlay { background-color: aliceblue; padding: 10rem; opacity: 0.6; position: absolute; z-index: -1000; top: -9%; right: -23%; }
+.site_wrapper { position: absolute; display: flex; flex-direction: column; z-index: 1000; }
+.overlay { background-color: aliceblue; height: 100vh; width: 100%; opacity: 0.2; z-index: -1000; }
 #results { display: flex; justify-content: center; margin: 2rem; font-size: 2rem; font-weight: bolder; }
 button { border: none; padding: 1rem; margin-top: 1rem; cursor: pointer; font-weight: bold; }
-#add { background-color: rgb(68, 161, 65); }
-#reset { background-color: rgb(185, 209, 50); }
+
+.btn--wrapper { display: flex; justify-content: space-between;}
+.saved-results--wrapper { height: 2rem; margin-top: 2rem; }
+#saved__results { display: none; font-size: 1.5rem; font-weight: bolder; overflow: hidden;}
+#add--btn { background-color: rgb(68, 161, 65); width: 48%; }
+#save--btn { background-color: rgb(61, 105, 199); width: 48%; }
+#reset--btn { background-color: rgb(185, 209, 50); }
