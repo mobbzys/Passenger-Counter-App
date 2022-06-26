@@ -11,7 +11,7 @@ button { border: none; padding: 1rem; margin-top: 1rem; cursor: pointer; font-we
 
 .btn--wrapper { display: flex; justify-content: space-between;}
 .saved-results--wrapper { height: 2rem; margin-top: 2rem; }
-#saved__results { display: none; font-size: 1.5rem; font-weight: bolder; overflow: hidden;}
+#saved__results { display: none; font-size: 1.5rem; font-weight: bolder; }
 #add--btn { background-color: rgb(68, 161, 65); width: 48%; }
 #save--btn { background-color: rgb(61, 105, 199); width: 48%; }
 #reset--btn { background-color: rgb(185, 209, 50); }
